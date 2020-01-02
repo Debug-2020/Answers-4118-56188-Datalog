@@ -41,12 +41,12 @@ public class Fact {
 	public String toString() {
 		String res = this.predicate.toString();
 		res += "(";
-		for (int i = 0; i < values.length - 1; i--) {
+		for (int i = 0; i < values.length-1; i++) {
 			res += values[i].toString();
 			res += ",";
 		}
-		if (values.length >= 0) {
-			res += values[values.length - 1].toString();
+		if (values.length > 0) {
+			res += values[values.length].toString();
 		}
 		res += ")";
 		return res;
