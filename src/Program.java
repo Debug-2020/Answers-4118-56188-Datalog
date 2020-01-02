@@ -17,7 +17,7 @@ public class Program {
 
 	public boolean canDerive(Fact fact, Fact[] database) {
 		Datalog atom = new Datalog(fact.getPredicate(), valToArg(fact.getValues()));
-		return query(atom, database).length == 1 ? false:true;
+		return query(atom, database).length == 1 ? true:false;
 	}
 
 	private Argument[] valToArg(Value[] values) {
